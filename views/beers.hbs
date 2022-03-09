@@ -1,0 +1,12 @@
+{{#each first25}}
+{{#if image_url}}
+<img class="beer-img" src="{{this.image_url}}" alt="beer image">
+{{else}}
+<span>no image shown</span>
+{{/if}}
+
+<h1>{{this.name}}</h1>
+<span>{{this.tagline}}</span>
+<p>{{this.description}}</p>
+
+{{/each}}
